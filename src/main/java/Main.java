@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.Random;
 
 /*
@@ -13,6 +14,42 @@ import java.util.Random;
  */
 public class Main {
     public static void main(String[] args) {
+        
+        ArrayList<String> names = new ArrayList<String>();
+        names.add("John");
+        names.add("Beth");
+        names.add("Scott");
+        names.add(0, "Bob");
+        
+        System.out.println(names.size());
+        
+        for (int i=0; i< names.size(); i++) {
+            System.out.println(names.get(i));
+        }
+        
+        System.out.println(names.toString());
+        
+        names.remove(2);
+        
+        System.out.println(names.toString());
+        
+        
+        // array review
+        double[] money = new double[10];
+        money[0] = 1.50;
+        money[1] = 2.0;
+        
+        for (int i=0; i< money.length; i++) {
+            System.out.println(money[i]);
+        }
+        
+        
+        
+        
+        
+        
+        
+        
         
         int[] months = { 1,2,3,4,5,6,7,8,9,10,11,12};
         
